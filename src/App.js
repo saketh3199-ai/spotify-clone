@@ -10,13 +10,14 @@ import FeaturedPlayListScreen from './Screens/FeaturedPlayListScreen';
 import CategoryPlayListScreen from './Screens/CategoryPlayListScreen';
 import AlbumScreen from './Screens/AlbumScreen';
 import NotFoundScreen from './Screens/NotFoundScreen';
-
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 const App = () => 
 {
   const AppJsx = 
   <>
   <ToastContainer />
   <Switch>
+      <Redirect exact from="/" to="/home" />
       <Route exact path='/login' component={LoginScreen} />
       <ProtectedRoute exact path='/home' component={HomeScreen} />
       <ProtectedRoute exact path='/featured/:id' component={FeaturedPlayListScreen} />
