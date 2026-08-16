@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSpecificNewReleaseQuery } from '../Slices/PlayListApiSlice'
-import { FaArrowLeft, FaPlay, FaVolumeUp } from 'react-icons/fa'
+import { FaArrowLeft, FaPlay } from 'react-icons/fa'
 import SideBar from '../Components/SideBar'
 import AlbumSongRow from '../Components/AlbumSongRow'
 import AudioPlayer from 'react-h5-audio-player'

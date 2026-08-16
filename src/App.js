@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Switch,Route } from 'react-router-dom/cjs/react-router-dom.min';
 import LoginScreen from './Screens/LoginScreen';

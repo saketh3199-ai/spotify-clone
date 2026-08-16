@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSpecificFeaturePlayListQuery } from '../Slices/PlayListApiSlice'
-import {FaArrowLeft,FaPlay,FaVolumeUp} from 'react-icons/fa'
+import {FaArrowLeft,FaPlay} from 'react-icons/fa'
 import SideBar from '../Components/SideBar'
 import SongRow from '../Components/SongRow'
 import { useState } from 'react'
@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 const FeaturedPlayListScreen = (props) => 
 {
-  const {data:FeaturedObj,isLoading:featuredSpecificLoading,error:featuredError} = useSpecificFeaturePlayListQuery(props.match.params.id)
+  const {data:FeaturedObj} = useSpecificFeaturePlayListQuery(props.match.params.id)
   const [currentTrack, setCurrentTrack] = useState(null)
 
   const StoreSongDetails = (track)=>

@@ -12,7 +12,7 @@ const LoginScreen = (props) =>
     const [name,setName] = useState('')
     const [password,setPassword] = useState('')
 
-    const [LoginApiCaller,{isLoading:loginLoading,error}] = useLoginMutation()
+    const [LoginApiCaller,{isLoading:loginLoading}] = useLoginMutation()
      
     const onClickFormSubmit = async (e) => 
     {
