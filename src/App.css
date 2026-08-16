@@ -28,6 +28,59 @@
   color: #61dafb;
 }
 
+.custom-audio-player.rhap_container {
+  background-color: #000000;
+  border-top: 1px solid #333;
+  box-shadow: none;
+  padding: 10px 20px;
+}
+
+/* Progress bar track */
+.custom-audio-player .rhap_progress-filled {
+  background-color: #1DB954; /* Spotify green */
+}
+
+.custom-audio-player .rhap_progress-indicator {
+  background: #1DB954;
+  width: 12px;
+  height: 12px;
+  top: -4px;
+}
+
+.custom-audio-player .rhap_progress-bar {
+  background-color: #4d4d4d;
+}
+
+/* Volume bar */
+.custom-audio-player .rhap_volume-filled {
+  background-color: #1DB954;
+}
+
+.custom-audio-player .rhap_volume-indicator {
+  background: #fff;
+}
+
+/* Time labels */
+.custom-audio-player .rhap_time {
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+/* Main play/pause button */
+.custom-audio-player .rhap_play-pause-button {
+  color: #fff;
+  font-size: 32px;
+}
+
+.custom-audio-player .rhap_main-controls-button {
+  color: #fff;
+}
+
+/* Volume icon */
+.custom-audio-player .rhap_volume-button {
+  color: #b3b3b3;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
